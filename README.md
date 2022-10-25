@@ -35,4 +35,4 @@ Now launch any browser and enter the following url
 ```
 http://localhost:3000
 ```
-**Grafana UI** will show up and by adding **Prometheus** as data source you can visualize the spring boot application.
+**Grafana UI** will show up and by adding **Prometheus** as data source you can monitor the spring boot application.
