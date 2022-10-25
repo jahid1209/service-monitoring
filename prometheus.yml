@@ -1,0 +1,11 @@
+global:
+  scrape_interval: 15s
+ 
+scrape_configs:
+  - job_name: 'springServiceMonitoringMetrics'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      # targets: ['Host Ip:8080']
+      #if you don't know your IP, you can run the following command
+      #   ip -f inet -o addr show docker0 | awk '{print $4}' | cut -d '/' -f 1
+      - targets: ['172.17.0.1:8080']
